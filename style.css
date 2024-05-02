@@ -17,13 +17,39 @@ body {
     font-family: roboto, sans-serif;
 }
 
-.pitch, .info, .quote, .action {
+.hero, .info, .quote, .action {
     flex: auto;
+    padding-right: 96px;
+    padding-left: 96px;
 }
 
-header, footer, .pitch {
+header, footer, .hero {
     background-color: #1F2937;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    padding-right: 96px;
+    padding-left: 96px;
+
+    .logo {
+        color: #F9FAF8;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav {
+        margin-left: auto;
+        ul {
+            display: flex;
+            gap: 16px;
+            color: #E5E7EB;
+            list-style-type: none;
+        }
+    }
+}
+
 
 footer {
     display: flex;
