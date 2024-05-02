@@ -19,12 +19,6 @@ body {
     font-family: roboto, sans-serif;
 }
 
-.hero, .info, .quote, .action {
-    flex: auto;
-    padding-right: 96px;
-    padding-left: 96px;
-}
-
 header, footer, .hero {
     background-color: #1F2937;
 }
@@ -53,8 +47,49 @@ header {
     }
 }
 
+.hero {
+    display: flex;
+    padding: 48px 96px;
+    flex: auto;
+
+    .side {
+        flex: 1;
+
+        h1 {
+            font-size: 48px;
+            color: #F9FAF8;
+        }
+
+        p {
+            font-size: 18px;
+            color: #E5E7EB;
+            margin: 16px 0;
+        }
+
+        button {
+            background-color: #3882F6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 08px 16px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+    .placeholder {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkgrey;
+        color: white;
+    }
+}
+
 .info {
     display: flex;
+    flex: auto;
     flex-direction: column;
     align-items: center;
     padding: 16px 0;
@@ -81,6 +116,7 @@ header {
             img {
                 width: 96px;
                 height: auto;
+                /* Need/want border and rounded corners? */
             }
 
             p {
@@ -99,6 +135,9 @@ header {
     /* padding-right: 120px; */
     /* padding-left: 120px; */
     gap: 16px;
+    flex: auto;
+    padding-right: 96px;
+    padding-left: 96px;
     
     p {
         font-size: 36px;
@@ -121,6 +160,7 @@ header {
 
 .action {
     display: flex;
+    flex: auto;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
