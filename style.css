@@ -8,6 +8,8 @@ html {
     /* height: 100%; This was part of the old solution */
 }
 
+/* One of the issues that I'm running into on this project is that a static image at one size does not tell me how the page is meant to ACT. In the absence of other instruction, I have based my design on the expectation that the page is intended to use the entire vertical hight of the viewing screen; no more, and no less, unless the screen is shrunk so much that the elements no longer allow that. However, it is equally possible that the page is inteded to extend beyond the visible page (forcing the user to scroll down to access some content). I simply don't know, so had to make a call based on this single image. */
+
 body {
     display:flex;
     flex-direction: column;
@@ -36,6 +38,7 @@ header {
 
     .logo {
         color: #F9FAF8;
+
         font-size: 24px;
         font-weight: bold;
     }
@@ -47,6 +50,27 @@ header {
             color: #E5E7EB;
             list-style-type: none;
         }
+    }
+}
+
+.quote {
+    background-color:  #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 120px;
+    padding-left: 120px;
+    gap: 16px;
+    p {
+        font-size: 36px;
+        font-style: italic;
+        font-weight: 300;
+        color: #1F2937;
+    }
+    span {
+        align-self: flex-end;
+        font-size: 24px;
+        font-weight: bold;
     }
 }
 
