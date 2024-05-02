@@ -53,6 +53,44 @@ header {
     }
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+    padding-right: 96px;
+    padding-left: 96px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 800;
+        color: #1F2937;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-self: stretch;
+        margin-top: 16px;
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            img {
+                width: 96px;
+                height: auto;
+            }
+
+            p {
+                width: 96px;
+            }
+        }
+       
+    }
+}
+
 .quote {
     background-color:  #E5E7EB;
     display: flex;
